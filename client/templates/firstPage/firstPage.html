@@ -1,0 +1,52 @@
+<template name="firstPage">
+    <div>
+        <div class="menu">
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b
+                        class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{pathFor 'firstPage'}}">Home</a></li>
+                    <li><a href="{{pathFor 'monthlyBill'}}">View Monthly Bill</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="date-container">
+            <div class="date">
+                <span class="date-month"><b>{{date.month}}</b>,</span>
+                <span class="date-date"><i>{{date.date}} {{date.year}}</i> </span>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="row">
+                <form class="col-xs-8 col-xs-push-2 form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label">Select Employee</label>
+                        <div>
+                            <select class="form-control" id="empId">
+                                {{#each _employees}}
+                                <option value="{{_id}}">{{name}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Enter Eatables Price</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">Rs.</div>
+                            <input type="number" class="form-control" placeholder="Amount" id="amount" required>
+                        </div>
+                    </div>
+                    <div class=form-group>
+                        <button class="btn btn-primary btn-xs">Submit</button>
+                        <a class="btn btn-cancel btn-xs" href="{{pathFor 'firstPage'}}">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            {{> toasts}}
+        </div>
+    </div>
+
+</template>

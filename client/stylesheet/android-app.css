@@ -1,0 +1,184 @@
+html{
+height: 100%;
+}
+
+body{
+height: 100%;
+}
+
+.container-main{
+height: 90%;
+width : 100%;
+background : #fff;
+}
+
+.load-page{
+height:100%;
+background : #464444;
+}
+
+.loading-image{
+height: 170px;
+padding: 100px;
+background: url('/images/loading_gears.gif') no-repeat center center;
+}
+
+.loading-text{
+text-align: center;
+color: #EEB111;
+}
+
+.logo{
+height: 50px;
+float : left;
+}
+
+.header{
+background: rgba(8, 8, 8, 0.87);
+height : 9%;
+width : 100%;
+color : #fff;
+}
+
+
+.navbar-default {
+background-color: rgba(53, 52, 52, 0.78);
+border-color: #777;
+}
+
+.navbar-brand{
+color : #fff;
+height:4%;
+}
+
+.navbar-default .navbar-brand {
+color: #D8CFCF;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #545252;
+background-color: #DDDDDD;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+margin-left: -5px;
+}
+
+.date-container {
+height: 145px;
+width: 100%;
+background: url('/images/pizza.jpg') no-repeat 100% 100%;
+background-size: cover;
+margin-top: 0px;
+font-family: Georgia ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.date{
+height:100%;
+width:100%;
+background-color:rgba(84, 82, 82, 0.62);
+}
+
+span.date-month {
+font-size: 50px;
+color: #EFE443;
+}
+
+span.date-date{
+font-size: 40px;
+color: #DCD7D7;
+padding-top: 10px;
+font-style: italic;
+}
+
+.form-container{
+padding-top:30px;
+width:96%;
+}
+
+.control-label{
+color: #797575;
+}
+
+.date-image{
+float:right;
+height:70px;
+padding:10px;
+}
+
+.menu{
+width: 100%;
+height: 25px;
+padding: 0px;
+background: #74F1BF;
+}
+
+.dropdown > a{
+color : #4A4545;
+padding : 5px
+}
+
+.open > a{
+text-decoration : none;
+}
+
+.errors{
+position: fixed;
+z-index: 10000;
+padding: 10px;
+top: 65%;
+left: 30%;
+right: 0px;
+bottom: 0px;
+pointer-events: none;
+}
+
+.alert {
+max-width: 190px;
+clear: both;
+margin-bottom: 5px;
+pointer-events: auto;
+padding:5px;
+}
+
+.toasts{
+position: fixed;
+z-index: 10000;
+padding: 5px;
+top: 65%;
+left: 30%;
+right: 0px;
+bottom: 0px;
+pointer-events: none;
+}
+
+.message-submit{
+color: #F1EBEB;
+text-align:center;
+background-color: rgba(70, 66, 66, 0.62);
+border-color: #0A0A0A;
+}
+
+.datepicker-container{
+display : flex;
+}
+
+.bill-header{
+background-color : #C4F1F1;
+padding: 3px;
+margin-right:-35px;
+}
+
+.date-column{
+float:left;
+padding-left:25px;
+}
+
+.price-column{
+float:right;
+text-align : center;
+}
+
+.bill-container{
+padding-top:20px;
+}
