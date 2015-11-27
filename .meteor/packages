@@ -25,3 +25,5 @@ iron:router
 percolate:synced-cron
 rajit:bootstrap3-datepicker
 momentjs:moment
+meteorhacks:ssr
+email

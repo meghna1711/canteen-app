@@ -43,6 +43,16 @@ format : "yyyy-mm-dd"
 
 Session.set('showBill' , false);
 
+document.addEventListener("backbutton", function(){
+if (history.state && history.state.initial === true) {
+console.log("monthly bill");
+navigator.app.exitApp();
+} else {
+console.log("monthly bill previous page");
+history.go(-1);
+}
+});
+
 }
 
 Template.monthlyBill.helpers({

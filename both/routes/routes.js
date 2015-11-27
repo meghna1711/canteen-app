@@ -1,17 +1,18 @@
 Router.configure({
 loadingTemplate : 'loading',
-layoutTemplate : 'mainLayout'
 });
 
 
 Router.route('/' , {
-name : 'loading'
+name : 'startScreen',
 });
 
 Router.route('/firstPage' , {
-name : 'firstPage'
+name : 'firstPage',
+layoutTemplate : 'mainLayout'
 });
 
 Router.route('/bill' , {
-name : "monthlyBill"
+name : "monthlyBill",
+layoutTemplate : 'mainLayout'
 });

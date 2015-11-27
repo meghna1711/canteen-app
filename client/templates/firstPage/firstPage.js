@@ -5,6 +5,15 @@ var instance = this;
 instance.subscribe('employees');
 });
 
+Template.firstPage.rendered= function(){
+
+document.addEventListener("backbutton", function(){
+console.log("first page");
+navigator.app.exitApp();
+});
+
+}
+
 Template.firstPage.events({
 'submit form' : function(e){
 e.preventDefault();

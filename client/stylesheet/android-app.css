@@ -6,10 +6,17 @@ body{
 height: 100%;
 }
 
+.container-div{
+height : 100%;
+width : 100%;
+background : url('/images/background.jpg') no-repeat center center;
+background-size : cover;
+}
+
 .container-main{
 height: 90%;
 width : 100%;
-background : #fff;
+background : rgba(0, 0, 0, 0.24);
 }
 
 .load-page{
@@ -29,21 +36,39 @@ color: #EEB111;
 }
 
 .logo{
-height: 50px;
+height: 49px;
 float : left;
+margin-left : 5px;
 }
 
 .header{
-background: rgba(8, 8, 8, 0.87);
-height : 9%;
-width : 100%;
-color : #fff;
+background: rgba(224, 111, 23, 0.73);
+height: 9%;
+width: 100%;
+color: #fff;
 }
 
 
+.navbar-nav{
+margin-left : 10px;
+display : inline-flex;
+height : 49px;
+}
+
+
+.navbar-nav>li{
+width : auto !important;
+}
+
+.navbar-nav > li > a{
+margin-top : -14px;
+width : auto !important;
+height:48px !important;
+}
+
 .navbar-default {
-background-color: rgba(53, 52, 52, 0.78);
-border-color: #777;
+background-color: transparent;
+border-color: transparent;
 }
 
 .navbar-brand{
@@ -52,12 +77,17 @@ height:4%;
 }
 
 .navbar-default .navbar-brand {
-color: #D8CFCF;
+color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a{
+border-radius : 3px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 color: #545252;
 background-color: #DDDDDD;
+border-radius : 3px;
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
@@ -65,23 +95,26 @@ margin-left: -5px;
 }
 
 .date-container {
-height: 145px;
+height: 70px;
 width: 100%;
-background: url('/images/pizza.jpg') no-repeat 100% 100%;
-background-size: cover;
+text-align : center;
+background: transparent;
 margin-top: 0px;
 font-family: Georgia ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .date{
-height:100%;
-width:100%;
-background-color:rgba(84, 82, 82, 0.62);
+height: 100%;
+width: 95%;
+background: rgba(45, 42, 42, 0.65);
+margin: 10px;
+border-radius: 6px;
 }
 
 span.date-month {
-font-size: 50px;
-color: #EFE443;
+font-size: 45px;
+color: #F78D36;
+padding-left:10px;
 }
 
 span.date-date{
@@ -97,7 +130,13 @@ width:96%;
 }
 
 .control-label{
-color: #797575;
+color: #F18727;
+}
+
+.price-form{
+background: white;
+border-radius: 17px;
+padding: 25px;
 }
 
 .date-image{
@@ -145,8 +184,8 @@ padding:5px;
 position: fixed;
 z-index: 10000;
 padding: 5px;
-top: 65%;
-left: 30%;
+top: 80%;
+left: 24%;
 right: 0px;
 bottom: 0px;
 pointer-events: none;
@@ -155,7 +194,7 @@ pointer-events: none;
 .message-submit{
 color: #F1EBEB;
 text-align:center;
-background-color: rgba(70, 66, 66, 0.62);
+background-color: rgba(37, 35, 35, 0.91);
 border-color: #0A0A0A;
 }
 
@@ -166,7 +205,13 @@ display : flex;
 .bill-header{
 background-color : #C4F1F1;
 padding: 3px;
-margin-right:-35px;
+margin-right:-15px;
+}
+
+.bill-row{
+background-color : white;
+padding: 3px;
+margin-right:-15px;
 }
 
 .date-column{
@@ -181,4 +226,53 @@ text-align : center;
 
 .bill-container{
 padding-top:20px;
+}
+
+.screen-container{
+height:100%;
+width:100%;
+background : url('/images/startScreen.jpg') no-repeat center center;
+background-size : cover;
+}
+
+.screen-content{
+padding-top: 100px;
+text-align:center;
+}
+
+.heading{
+font-size: 30px;
+color: #BF1717;
+font-family: Georgia;
+}
+
+.secondary-text{
+font-size: 22px;
+font-style: italic;
+color: #8C1111;
+font-family: -webkit-pictograph;
+}
+
+.welcome-div{
+background: url('/images/ribbon.png') no-repeat center center;
+background-size: cover;
+width: 100%;
+margin-left: -10px;
+height: 127px;
+padding: 35px;
+}
+
+.welcome-content{
+font-size:35px;
+color: white;
+font-family : monospace;
+}
+
+.loading-div{
+height:150px;
+margin-top:-15px;
+}
+
+.loading-img{
+height:150px;
 }
